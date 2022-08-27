@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**[ === START FIXED HEADER STYLING === ]**/
+.fixed-header {
+    @apply fixed top-0 right-0 left-0 w-full transition-all duration-200 bg-white shadow-lg !py-0 z-[9999999];
+}
+.fix-main {
+    @apply !mt-44;
+}
+/**[ === END FIXED HEADER STYLING === ]**/
+
+.az_custom_input {
+    @apply group-focus:px-2 group-focus:-top-2 group-focus:right-0 group-focus:left-5 group-focus:bottom-0 group-focus:text-xs group-focus:text-blue-700 h-max w-max group-focus:bg-white duration-100 transition-all group-focus:duration-100; 
+}
+.az_default_label {
+    @apply absolute top-[30%] right-0 left-[20px] w-max;
+}
+
+.az_default_label_active {
+    @apply absolute px-2 -top-2 right-0 left-5 bottom-0 text-sm text-blue-700 h-max w-max bg-white dark:bg-gray-800 transition-all duration-100;
+}
+
+.phone_sidebar {
+    @apply block md:hidden;
+}
+.az_custom_dot::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 30px;
+    left: -32px;
+    @apply bg-blue-600;
+}
+
+header ul li {
+    @apply px-5 cursor-pointer;
+}
+
+aside ul {
+    @apply mt-5;
+}
+aside ul li {
+    @apply p-2 mb-3;
+}
+
+body {
+    @apply font-inter;
+}
+
+body .custom_padding {
+    @apply px-44 py-5;
+}
+
+.dropdown ul li:hover h3 {
+    @apply text-btn-hover;
+}
+
+h1, h2, .az_custom_header {
+    @apply font-outfit font-[500];
+}
+
+footer {
+    @apply mt-0;
+}
+
+footer ul li {
+    @apply pb-7 text-az-light text-sm;
+}
+footer ul li a:hover {
+    @apply text-gray-700;
+}
+footer ul {
+    @apply pt-5;
+}
+
+@media screen and (max-width: 1280px) {
+    body .custom_padding {
+        @apply px-24 py-5;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body .custom_padding {
+        @apply px-20 py-5;
+    }
+}
+@media screen and (max-width: 1000px) {
+    header.custom_padding {
+        @apply !py-2 !px-7;
+    }
+
+    @media screen and ( max-width: 900px ) {
+        header.custom_padding {
+            @apply !px-5 text-sm;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .az_flex_center {
+        @apply flex-col justify-center align-middle items-center;
+    }
+    header.custom_padding {
+        @apply !py-2 !px-5;
+    }
+
+    .az_custom_dot::after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        @apply bg-blue-600;
+    }
+
+    body .custom_padding {
+        @apply px-2 py-5;
+    }
+}
+
+table th {
+    @apply p-5;
+}
+
+table td {
+    @apply p-5;
+}
+table td {
+    @apply text-center;
+}
+
+
+/**[ === DARK THEME CONFIGURATION === ]**/
+
+span, div, h1, h2, h3, h4, h5, h6, section ul, li, table, a, b {
+    @apply dark:text-gray-300;
+}
+
+header.fixed-header {
+    @apply dark:bg-[#1d2734];
+}
+
+header svg, footer svg {
+    @apply dark:fill-white;
+}
+
+body {
+    @apply dark:bg-slate-900;
+}
+
+header button {
+    /* @apply bg-gray-200; */
+}
+button svg {
+    @apply fill-gray-600;
+}
+/**[ === END DARK THEME CONFIGURATION === ]**/
+
+.success {
+    @apply border-green-700 text-green-800 dark:text-green-400;
+}
+.error {
+    @apply border-red-700 text-red-800 dark:text-red-400;
+}
+
+table {
+    border: 1px solid #171515;
+    box-shadow: 1px 2px 17px rgb(0 0 0 / 60%) !important;
+}
+
+table tr {
+    @apply border border-b-gray-200;
+}
+
+table thead {
+    @apply border border-b-gray-300;
+}
+
+.bg-section-bg {
+    @apply dark:bg-slate-900;
+}
+
+#doo div svg {
+    margin: auto;
+}
+
