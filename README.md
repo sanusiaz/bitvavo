@@ -1,7 +1,7 @@
-# bitvavo
-crypto currency design template
+# Bitvavo
+Crypto Currency Website Template
 
-# Designed using 
-  Tailwind CSS
-  Animate On Scroll Library 
-  JQuery
+## Designed using 
+  - Tailwind CSS
+  - Animate On Scroll Library 
+  - JQuery
