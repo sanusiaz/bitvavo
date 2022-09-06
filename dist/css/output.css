@@ -764,14 +764,6 @@ video {
   height: max-content;
 }
 
-.h-80 {
-  height: 20rem;
-}
-
-.h-60 {
-  height: 15rem;
-}
-
 .w-28 {
   width: 7rem;
 }
@@ -843,6 +835,10 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -921,16 +917,8 @@ video {
   overflow: hidden;
 }
 
-.overflow-scroll {
-  overflow: scroll;
-}
-
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.overflow-y-scroll {
-  overflow-y: scroll;
 }
 
 .break-words {
@@ -1448,6 +1436,16 @@ video {
   color: rgb(191 219 254 / var(--tw-text-opacity));
 }
 
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.\!text-blue-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(59 130 246 / var(--tw-text-opacity)) !important;
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1871,12 +1869,28 @@ table thead {
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
+.hover\:\!text-white:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:transition-all:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .hover\:duration-150:hover {
   transition-duration: 150ms;
 }
 
 .hover\:duration-200:hover {
   transition-duration: 200ms;
+}
+
+.focus\:bg-yellow-400:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -2229,16 +2243,8 @@ table thead {
     margin-bottom: 2.5rem;
   }
 
-  .lg\:block {
-    display: block;
-  }
-
   .lg\:flex {
     display: flex;
-  }
-
-  .lg\:hidden {
-    display: none;
   }
 
   .lg\:w-\[300px\] {
@@ -2259,26 +2265,6 @@ table thead {
 
   .lg\:p-0 {
     padding: 0px;
-  }
-}
-
-@media (min-width: 300px) {
-  .smm\:block {
-    display: block;
-  }
-
-  .smm\:hidden {
-    display: none;
-  }
-}
-
-@media (min-width: 500px) {
-  .mdd\:block {
-    display: block;
-  }
-
-  .mdd\:hidden {
-    display: none;
   }
 }
 

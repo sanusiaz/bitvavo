@@ -214,7 +214,6 @@
         </aside>
     </header>
 
-
     <!-- Main Contents -->
     <main class="py-5 md:py-10">
         <!-- hero section -->
@@ -228,8 +227,47 @@
             </div>
         </section>
 
+        <section class="w-full overflow-hidden p-10 m-auto trading text-white" style="height: 700px;">  
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+            <div id="tradingview_6f195"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/USDT/" rel="noopener" target="_blank"><span class="blue-text">USDT Chart</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "autosize": true,
+            "symbol": "USDT",
+            "interval": "D",
+            "timezone": "Etc/UTC",
+            // "theme": "dark",
+            "isTransparent": true,
+            "style": "1",
+            "locale": "en",
+            "width" : "100%",
+            "height" : "100%",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_legend": true,
+            "withdateranges": true,
+            "allow_symbol_change": true,
+            "watchlist": [
+            "USD",
+            "BTC",
+            "USDT",
+            "ETH"
+            ],
+            "calendar": true,
+            "container_id": "tradingview_6f195"
+        }
+            );
+            </script>
+        </div>
+        <!-- TradingView Widget END -->     
+        </section>  
+
         <!-- Trading View -->
-        <section class="w-full overflow-hidden p-10 m-auto trading text-white" style="height: 1200px;">
+        <section class="w-full overflow-hidden p-10 m-auto trading text-white" style="height: 700px;">
             <div class="tradingview-widget-container">
                 <div class="tradingview-widget-container__widget"></div>
                 <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView</div>
@@ -246,6 +284,37 @@
                 </script>
             </div>
         </section>
+
+          <!-- Trading View -->
+          <section class="w-full overflow-hidden p-10 m-auto trading text-white" style="height: 700px;">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div id="tradingview_50699"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/FOREXCOM-NSXUSD/" rel="noopener" target="_blank"><span class="blue-text">NSXUSD Chart</span></a> by TradingView</div>
+                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                new TradingView.widget(
+                {
+                "autosize": true,
+                "symbol": "FOREXCOM:NSXUSD",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "width": "100%",
+                "height": "100%",
+                "style": "1",
+                "locale": "en",
+                // "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "isTransparent": true,
+                "allow_symbol_change": true,
+                "container_id": "tradingview_50699"
+            }
+                );
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </section>
+
 
         <style>
             @media screen and (max-width: 765px) {
