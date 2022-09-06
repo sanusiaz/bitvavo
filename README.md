@@ -7,6 +7,7 @@ Crypto Currency Website Template with trading view
   - Animate On Scroll Library 
   - JQuery
   - Javascript
+  - AJAX
 
 ### Trading Views
   - USD, BTC, USDT, ETH
